@@ -1,0 +1,32 @@
+@import '_fonts';
+@import '_settings';
+
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  min-width: 300px;
+  font-size: 16px;
+  font-family: 'Inter';
+  background-color: #F7F7F8;
+  color: var(--grey);
+  &.menu-open {
+    overflow: hidden;
+  }
+}
+.page-wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  main {
+    flex-grow: 1;
+  }
+}
+.wrapper {
+  max-width: 1300px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
